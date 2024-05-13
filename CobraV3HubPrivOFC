@@ -1768,16 +1768,11 @@ end
 end
 
 --Valor
-_G.AutoHealth = True
+_G.AutoHealth3 = True
 
 --Função
-function AutoHealth2()
-while _G.AutoHealth2 == true do
-local args = {
-    [1] = "GiveHealthCuzPro",
-    [2] = 2,
-    [3] = 1
-}
+function AutoHealth3()
+while _G.AutoHealth3 == true do
 local args = {
     [1] = "GiveHealthCuzPro",
     [2] = 2,
@@ -5452,6 +5447,9 @@ HealthTab:AddToggle({
         _G.AutoHealth2 = Value
         AutoHealth2()
     end
+})
+local Section = HealthTab:AddSection({
+    Name = "AutoFarm"
 })
 HealthTab:AddToggle({
     Name = "Auto-Health3",
