@@ -806,7 +806,7 @@ wait()
 end
 end
 --Valor
-_G.AutoHealth = True
+_G.AutoHealth2 = True
 
 --Função
 function AutoHealth2()
@@ -5413,9 +5413,6 @@ game:GetService("ReplicatedStorage"):WaitForChild("andreymax"):FireServer(unpack
 game:GetService("ReplicatedStorage"):WaitForChild("andreymax"):FireServer(unpack(args))
 game:GetService("ReplicatedStorage"):WaitForChild("andreymax"):FireServer(unpack(args))
 game:GetService("ReplicatedStorage"):WaitForChild("andreymax"):FireServer(unpack(args))
-
-
-
 wait()
 end
 end
@@ -5430,11 +5427,11 @@ local Section = HealthTab:AddSection({
     Name = "AutoFarm"
 })
 HealthTab:AddToggle({
-    Name = "Auto-Health2",
+    Name = "Auto-Health",
     Default = false,
     Callback = function(Value)
-        _G.AutoHealth2 = Value
-        AutoHealth2()
+        _G.AutoHealth = Value
+        AutoHealth()
     end
 })
 local Section = HealthTab:AddSection({
@@ -5446,17 +5443,6 @@ HealthTab:AddToggle({
     Callback = function(Value)
         _G.AutoHealth2 = Value
         AutoHealth2()
-    end
-})
-local Section = HealthTab:AddSection({
-    Name = "AutoFarm"
-})
-HealthTab:AddToggle({
-    Name = "Auto-Health3",
-    Default = false,
-    Callback = function(Value)
-        _G.AutoHealth3 = Value
-        AutoHealth3()
     end
 })
 local Section = HealthTab:AddSection({
