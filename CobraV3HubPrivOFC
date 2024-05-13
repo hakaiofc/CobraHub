@@ -5416,7 +5416,6 @@ game:GetService("ReplicatedStorage"):WaitForChild("andreymax"):FireServer(unpack
 wait()
 end
 end
-
 --Valor
 _G.AutoHealth4 = True
 
