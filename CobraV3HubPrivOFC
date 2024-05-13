@@ -5876,7 +5876,7 @@ HealthTab:AddToggle({
         AutoHealth3()
     end
 })
-ocal Section = HealthTab:AddSection({
+local Section = HealthTab:AddSection({
     Name = "AutoFarm"
 })
 HealthTab:AddToggle({
